@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#121212"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/imageView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/connectBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="3dp"
+                android:text="@string/connect" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:src="@drawable/logo" />
+
+            <Button
+                android:id="@+id/disconnectBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="3dp"
+                android:text="@string/disconnect" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/appbgfinal"
+        app:layout_constraintBottom_toTopOf="@id/bottomBarLayout"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintDimensionRatio="H,16:9"/>
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/shoulderSlider"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="Shoulder Slider"
+        app:layout_constraintVertical_bias="0.366"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <TextView
+        android:id="@+id/shoulerTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shoulder"
+        android:textSize="25sp"
+        android:textColor="#fdfdfd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/waistSlider"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="Waist Slider"
+        app:layout_constraintVertical_bias="0.72"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/waistTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waist"
+        android:textSize="25sp"
+        android:textColor="#fdfdfd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.68"
+        app:layout_constraintHorizontal_bias="0.69"/>
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/gripSlider"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="Grip Slider"
+        app:layout_constraintVertical_bias="0.55"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/gripTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grip"
+        android:textSize="25sp"
+        android:textColor="#fdfdfd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.513"
+        app:layout_constraintHorizontal_bias="0.69"/>
+
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/wristRollSlider"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="WristRoll Slider"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0.16"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/wristRollTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wrist Roll"
+        android:textSize="25sp"
+        android:textColor="#fdfdfd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.135"
+        app:layout_constraintHorizontal_bias="0.9"/>
+
+
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/elbowSlider"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="Elbow Slider"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintVertical_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/elbowTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elbow"
+        android:textSize="25sp"
+        android:textColor="#fdfdfd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintHorizontal_bias="0.32"/>
+
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/wristPitchSlider"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="WristPitch Slider"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.2998"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/wristPitchTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wrist Pitch"
+        android:textSize="25sp"
+        android:textColor="#fdfdfd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.27"
+        app:layout_constraintHorizontal_bias="1"/>
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bottomBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#121212"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:text="Save" />
+
+
+            <Button
+                android:id="@+id/Run"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:text="Run" />
+
+            <Button
+                android:id="@+id/Reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:text="Reset" />
+
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_begin="20dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

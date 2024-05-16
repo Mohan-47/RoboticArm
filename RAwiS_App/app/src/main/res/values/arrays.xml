@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="slider_values">
+        <item>0.0</item> <!-- Minimum value -->
+        <item>180.0</item> <!-- Maximum value -->
+    </array>
+</resources>

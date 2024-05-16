@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RaWiS</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="run">Run</string>
+    <string name="pause">Pause</string>
+    <string name="connect">Connect</string>
+</resources>
