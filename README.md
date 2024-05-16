@@ -29,6 +29,7 @@ Once the Arduino code is uploaded and the Bluetooth module is paired with your A
 ## Android Application
 
 The Android application allows you to control the robotic arm wirelessly via Bluetooth.
+The android app is written in Kotlin and the source code can be found in MainActivity.kt which can be found in RAwiS_App\app\src\main\java\com\example\rawis. 
 
 ### Dependencies
 
